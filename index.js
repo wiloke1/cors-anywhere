@@ -7,6 +7,12 @@ createServer({
   originWhitelist: [], // Allow all origins
   requireHeader: ["origin", "x-requested-with"],
   removeHeaders: ["cookie", "cookie2"],
+  setHeaders: {
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+    "Access-Control-Allow-Headers":
+      "Content-Type, Authorization, Content-Length, X-Requested-With",
+  },
 }).listen(port, host, function () {
   console.log("Running CORS Anywhere on " + host + "::" + port);
 });
