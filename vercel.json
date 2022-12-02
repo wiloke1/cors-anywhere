@@ -1,7 +1,6 @@
 {
   "version": 2,
   "name": "cors-anywhere",
-  "headers": [],
   "builds": [
      { "src": "index.js", "use": "@vercel/node" }
   ],
