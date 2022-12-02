@@ -3,7 +3,7 @@
   "name": "cors-anywhere",
   "headers": [
     {
-      "source": "/(.*)",
+      "source": "/index.js",
       "headers": [
         { "key": "Access-Control-Allow-Credentials", "value": "true" },
         { "key": "Access-Control-Allow-Origin", "value": "*" },
