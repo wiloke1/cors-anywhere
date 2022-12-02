@@ -6,5 +6,16 @@
   ],
   "routes": [
      { "src": "/(.*)", "dest": "/index.js" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Credentials", "value": "true" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET,OPTIONS,PATCH,DELETE,POST,PUT" },
+        { "key": "Access-Control-Allow-Headers", "value": "date,connection,x-frame-options,x-xss-protection,x-content-type-options,x-download-options,x-permitted-cross-domain-policies,referrer-policy,vary,etag,cache-control,content-security-policy,x-request-id,x-runtime,strict-transport-security,server-timing,x-dc,cf-cache-status,report-to,nel,server,cf-ray,alt-svc,x-final-url,access-control-allow-origin" }
+      ]
+    }
   ]
 }
