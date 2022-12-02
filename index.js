@@ -5,8 +5,8 @@ const port = process.env.PORT || 8080;
 
 createServer({
   originWhitelist: [], // Allow all origins
-  requireHeader: ["origin", "x-requested-with"],
-  removeHeaders: ["cookie", "cookie2"],
+  requireHeader: [],
+  removeHeaders: [],
   setHeaders: {
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
